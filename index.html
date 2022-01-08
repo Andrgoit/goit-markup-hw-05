@@ -65,7 +65,7 @@
       <section class="hero hero-bg">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button data-modal-open type="button" class="button">Заказать услугу</button>
         </div>
       </section>
       <!---Feature-->
@@ -75,7 +75,7 @@
           <ul class="feature-list list">
             <li class="feature-item">
               <div class="future-item-icon">
-                <svg width="70" height="70">
+                <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -86,7 +86,7 @@
             </li>
             <li class="feature-item">
               <div class="future-item-icon">
-                <svg width="70" height="70">
+                <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -97,7 +97,7 @@
             </li>
             <li class="feature-item">
               <div class="future-item-icon">
-                <svg width="70" height="70">
+                <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -108,7 +108,7 @@
             </li>
             <li class="feature-item">
               <div class="future-item-icon">
-                <svg width="70" height="70">
+                <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -126,13 +126,28 @@
           <h2 class="work-title">Чем мы занимаемся?</h2>
           <ul class="work-list list">
             <li class="work-list-item">
-              <img src="./images/box1-min.jpg" width="370" alt="Компьютер на столе" />
+              <div class="work-image">
+                <img src="./images/box1-min.jpg" width="370" alt="Компьютер на столе" />
+                <div class="work-overlay">
+                  <p class="work-overlay-text">Десктопные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="work-list-item">
-              <img src="./images/box2-min.jpg" width="370" alt="Мобильное приложение" />
+              <div class="work-image">
+                <img src="./images/box2-min.jpg" width="370" alt="Мобильное приложение" />
+                <div class="work-overlay">
+                  <p class="work-overlay-text">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="work-list-item">
-              <img src="./images/box3-min.jpg" width="370" alt="Палитра на планшете" />
+              <div class="work-image">
+                <img src="./images/box3-min.jpg" width="370" alt="Палитра на планшете" />
+                <div class="work-overlay">
+                  <p class="work-overlay-text">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -416,5 +431,18 @@
         </p>
       </div>
     </footer>
+    <!-- MODAL ELEMENTS -->
+    <!-- Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <!-- Modal window -->
+      <div class="modal">
+        <button data-modal-close type="button" class="btn-close-modal">
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
